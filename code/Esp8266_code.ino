@@ -36,65 +36,65 @@ void setled(int i,int d, int col)
   switch(d)
     {
       case 0:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CRGB::Black;
-      leds[l1] = CRGB::Black;
-      leds[l0] = CRGB::Black;
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CRGB::Black;
+        leds[l1] = CRGB::Black;
+        leds[l0] = CRGB::Black;
+        break;
       case 1:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CRGB::Black;
-      leds[l1] = CRGB::Black;
-      leds[l0] = CHSV(col, 255, 255);
+        leds[l3] = CRGB::Black;
+        leds[l2] = CRGB::Black;
+        leds[l1] = CRGB::Black;
+        leds[l0] = CHSV(col, 255, 255);
       break;
       case 2:
-      leds[l3] = CRGB::Black;
-      leds[l1] = CRGB::Black;
-      leds[l1] = CHSV(col, 255, 255);
-      leds[l0] = CRGB::Black;
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l1] = CRGB::Black;
+        leds[l1] = CHSV(col, 255, 255);
+        leds[l0] = CRGB::Black;
+        break;
       case 3:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CRGB::Black;
-      leds[l1] = CHSV(col, 255, 255);
-      leds[l0] = CHSV(col, 255, 255);
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CRGB::Black;
+        leds[l1] = CHSV(col, 255, 255);
+        leds[l0] = CHSV(col, 255, 255);
+        break;
       case 4:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CHSV(col, 255, 255);
-      leds[l1] = CRGB::Black;
-      leds[l0] = CRGB::Black;
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CHSV(col, 255, 255);
+        leds[l1] = CRGB::Black;
+        leds[l0] = CRGB::Black;
+        break;
       case 5:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CHSV(col, 255, 255);
-      leds[l1] = CRGB::Black;
-      leds[l0] = CHSV(col, 255, 255);
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CHSV(col, 255, 255);
+        leds[l1] = CRGB::Black;
+        leds[l0] = CHSV(col, 255, 255);
+        break;
       case 6:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CHSV(col, 255, 255);
-      leds[l1] = CHSV(col, 255, 255);
-      leds[l0] = CRGB::Black;
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CHSV(col, 255, 255);
+        leds[l1] = CHSV(col, 255, 255);
+        leds[l0] = CRGB::Black;
+        break;
       case 7:
-      leds[l3] = CRGB::Black;
-      leds[l2] = CHSV(col, 255, 255);
-      leds[l1] = CHSV(col, 255, 255);
-      leds[l0] = CHSV(col, 255, 255);
-      break;
+        leds[l3] = CRGB::Black;
+        leds[l2] = CHSV(col, 255, 255);
+        leds[l1] = CHSV(col, 255, 255);
+        leds[l0] = CHSV(col, 255, 255);
+        break;
       case 8:
-      leds[l3] = CHSV(col, 255, 255);
-      leds[l2] = CRGB::Black;
-      leds[l1] = CRGB::Black;
-      leds[l0] = CRGB::Black;
-      break;
+        leds[l3] = CHSV(col, 255, 255);
+        leds[l2] = CRGB::Black;
+        leds[l1] = CRGB::Black;
+        leds[l0] = CRGB::Black;
+        break;
       case 9:
-      leds[l3] = CHSV(col, 255, 255);
-      leds[l2] = CRGB::Black;
-      leds[l1] = CRGB::Black;
-      leds[l0] = CHSV(col, 255, 255);
-      break;
+        leds[l3] = CHSV(col, 255, 255);
+        leds[l2] = CRGB::Black;
+        leds[l1] = CRGB::Black;
+        leds[l0] = CHSV(col, 255, 255);
+        break;
 
 }}
 
