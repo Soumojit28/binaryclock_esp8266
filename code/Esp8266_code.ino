@@ -2,31 +2,37 @@
  * Binary Clock With ESP8266 and
  * WS2812b RGB Leds
  * Code By - Soumojit Ash
- * soumojitash#gmail.com
+ * soumojitash@gmail.com
+ * buymeacoffee.com/technatorium                
  */
-//Hello123
 
 
-#include <FastLED.h>
-#include <NTPClient.h>
+
+#include <FastLED.h> //https://github.com/FastLED/FastLED
+#include <NTPClient.h> //https://github.com/arduino-libraries/NTPClient
 #include <ESP8266WiFi.h>
-#include <WiFiUdp.h>
+#include <WiFiUdp.h> 
 
 #define NUM_LEDS 20
 #define DATA_PIN 3
+#define OFFSET 19800 //Change this value according to your time zone 
 
 CRGB leds[NUM_LEDS];
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "1.pool.ntp.org", 19800, 60000);
-const char *ssid     = "********";
-const char *password = "*******";
-  static uint8_t hue = 0;
+NTPClient timeClient(ntpUDP, "1.pool.ntp.org", OFFSET, 60000);
+
+
+const char *ssid     = "Soumojit"; //Your WiFi SSID
+const char *password = "28042002a"; //Your WiFi PASSWORD
+static uint8_t hue = 0;
+
+
 int h,h1,h2;
 int m,m1,m2;
 int s,s1,s2;
 int l0,l1,l2,l3;
 
-void setled(int i,int d, int col)
+void setled(int i,int d, int col) //Function to set leds
 { l0=0+i;
   l1=1+i;
   l2=2+i;
@@ -125,10 +131,10 @@ void loop () {
    m= timeClient.getMinutes();
    s= timeClient.getSeconds();
    Serial.print(h);
-  Serial.print(":");
-  Serial.print(m);
-  Serial.print(":");
-  Serial.println(s);
+   Serial.print(":");
+   Serial.print(m);
+   Serial.print(":");
+   Serial.println(s);
   
 
    if(h>12)
